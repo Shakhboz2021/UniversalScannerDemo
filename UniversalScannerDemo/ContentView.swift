@@ -18,7 +18,6 @@ struct ContentView: View {
         VStack(spacing: 20) {
             Text("Card Number: \(cardNumber)")
             Text("Expiry: \(expiryDate.isEmpty ? "N/A" : expiryDate)")
-
             Button(action: {
                 let scanner = CardScanner(delegate: delegate, needExpiryDate: true)
                 if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
