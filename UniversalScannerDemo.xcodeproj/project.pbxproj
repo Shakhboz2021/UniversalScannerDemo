@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D0CD55E22DE08EEA00A7FAC6 /* Scanner in Frameworks */ = {isa = PBXBuildFile; productRef = D0CD55E12DE08EEA00A7FAC6 /* Scanner */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D0CD55B22DE08EA100A7FAC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0CD55E22DE08EEA00A7FAC6 /* Scanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				D0CD55A12DE08E9F00A7FAC6 /* UniversalScannerDemo */,
 				D0CD55B42DE08EA100A7FAC6 /* UniversalScannerDemoTests */,
 				D0CD55BE2DE08EA100A7FAC6 /* UniversalScannerDemoUITests */,
+				D0CD55E02DE08EEA00A7FAC6 /* Frameworks */,
 				D0CD55A02DE08E9F00A7FAC6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				D0CD55BB2DE08EA100A7FAC6 /* UniversalScannerDemoUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D0CD55E02DE08EEA00A7FAC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 			);
 			name = UniversalScannerDemo;
 			packageProductDependencies = (
+				D0CD55E12DE08EEA00A7FAC6 /* Scanner */,
 			);
 			productName = UniversalScannerDemo;
 			productReference = D0CD559F2DE08E9F00A7FAC6 /* UniversalScannerDemo.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = D0CD55962DE08E9F00A7FAC6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D0CD55DF2DE08EDE00A7FAC6 /* XCRemoteSwiftPackageReference "Scanner" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D0CD55A02DE08E9F00A7FAC6 /* Products */;
 			projectDirPath = "";
@@ -405,6 +422,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,6 +451,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +577,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0CD55DF2DE08EDE00A7FAC6 /* XCRemoteSwiftPackageReference "Scanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Shakhboz2021/Scanner.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0CD55E12DE08EEA00A7FAC6 /* Scanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0CD55DF2DE08EDE00A7FAC6 /* XCRemoteSwiftPackageReference "Scanner" */;
+			productName = Scanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D0CD55972DE08E9F00A7FAC6 /* Project object */;
 }
