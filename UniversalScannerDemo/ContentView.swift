@@ -14,7 +14,6 @@ struct ContentView: View {
     @State private var expiryDate: String = ""
     private let delegate = ScanDelegateHandler()
 
-    
     var body: some View {
         VStack(spacing: 20) {
             Text("Card Number: \(cardNumber)")
