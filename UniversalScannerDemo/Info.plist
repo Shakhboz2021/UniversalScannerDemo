@@ -4,7 +4,9 @@
 <dict>
 	<key>CFBundleIdentifier</key>
 	<string>fido.uz.UniversalScannerDemo</string>
-	<key>NSCameraUsageDescription</key>
-	<string>We need camera access</string>
+		<key>NSCameraUsageDescription</key>
+<string>This app needs camera access to scan cards in real-time.</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>This app needs access to your photo library to scan card details from images.</string>
 </dict>
 </plist>
